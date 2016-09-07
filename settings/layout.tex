@@ -1,0 +1,13 @@
+% Set fonts.
+\setmainfont{TeX Gyre Pagella}
+
+% Do not list chapter numbers in section titles.
+\renewcommand*\thesection{\arabic{section}}
+
+% Redefine page headings to be empty.
+\makeoddhead{plain}{}{}{}
+\makeoddhead{headings}{}{}{}
+
+% Redefine page footers to include the page number and git status.
+\makeoddfoot{plain}{git branch: \gitbranch\ -- commit \#\gitnumber\ (\gitshorthash)}{}{\thepage}
+\makeoddfoot{headings}{git branch: \gitbranch\ -- commit \#\gitnumber\ (\gitshorthash)}{}{\thepage}
