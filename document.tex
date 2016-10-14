@@ -1,3 +1,84 @@
 % Write all the includes/inputs in this file. Feel free to use \subimport*{folder/}{file}.
 
-Document
+\chapter{Reviewmøde 14/10-2016}
+
+\section{Generelt om Opgavens opbyning}
+\begin{itemize}
+	\item Sørens kommentarer
+	\begin{itemize}
+		\item Rapporten bør kunne læses og forstås uden at læse dokumentationen. Se dokumntationen som bilag.
+		\item Beskrivelse af det overordnede system (på tværs af subsystems) er arkitektur. Når vi går ind i blokkene er det design.
+		\item Evt. præsenteret for for mange detaljer for tidligt i BDD-IBD fasen. Hold jer til de forskellige abstraktionsniveauer og overvej hvornår man skal grave dybere ned.
+		\item Mange blokke med lidt info, få blokke med meget info.
+		\item Flot arbejde, rækkefølgen er/føles ikke helt rigtig. Evt. Overblik -> Alt om subsystem A -> Subsystem B -> Subsystem C. Kan vejleder bedst lide det opdelt i subsystemer eller i BDD -> IBD -> ...
+		\item Sendt information har et navn. Den anvendte kommunikationsform har et andet navn.
+	\end{itemize}
+\end{itemize}
+
+\section{Tværgående}
+\begin{itemize}
+	\item \SI{150}{\metre} kan ikke bruges. UC + AT. Giver ikke mening med valg af ultralyd som afstandsmåler.
+\end{itemize}
+
+\section{Rapport}
+\begin{itemize}
+	\item Specificering af valgte muligheder svære at forstå. Føles som for meget fokus på mulighederne i stedet for valget.
+	\begin{itemize}
+		\item Specielt navigation virkede lidt rodet.
+	\end{itemize}
+	\item MoSCoW
+		\begin{itemize}
+			\item Vi har været rundhåndede med værdierne.
+			\item Opdater MoSCoW. Den føles uambitiøs i forhold til resten af rapporten.
+		\end{itemize}
+	\item Sæt fokus på TRÅDLØS controller.
+	\item Roveren og andre valg, som er håndteret uden videre overvejelse, skal ikke argumenteres, men blot præsenteres som den valgte løsning.
+	\item Vær ærlig omkring RPi i stedet for DevKit8000.
+	\item Tydeliggør testenvironment for prototypen.
+\end{itemize}
+
+\section{Procesrapport}
+\begin{itemize}
+	\item Gør Timeline mere læselig
+	\item Indsæt burn-down charts og dokumenter bedre hver enkelt sprint.
+	\item Mere fokus på at den skal kunne præsenteres til eksamen
+\end{itemize}
+
+\section{Dokumentation}
+\begin{itemize}
+	\item Overskrifterne virker ikke forklarende for hvad de indeholder.
+	\item UC
+	\begin{itemize}
+		\item Evt. giv Use Casene "UC1 Define Search Area"
+		\item \LaTeX linjeafstand i UC diagrammer.
+		\item Extension i Manual Override for mangel på forbindelse.
+		\item Extensions som kan foregå på flere punkter kan beskrives med en stjerne.
+		\item UC Perform Search. Drive to boundary of the search area.
+		\item Tilpas UC til testområdet. Beskriv testområde og de ting det indebærer i rapporten.
+		\item Perform Search opfylder ikke sit mål.
+		\item Evt. SD over UC-flow. Flere sætninger føles som inforståede, anvend SD for at undgå indforståede sætninger.
+		\item Log vs Remote Control
+	\end{itemize}
+	AT
+	\begin{itemize}
+		\item Evt. ragged right i tabeller på steder hvor sætningerne er korte.
+		\item Følger godt UC.
+		\item Manual Override. Forøg testen.
+		\item Uklart hvornår der køres en Ext., evt placer caption over eller giv egen subsubsection.
+	\end{itemize}
+	BDD
+	\begin{itemize}
+		\item 3V3 VS \SI{3.3}{\volt}
+		\item For meget info for tidligt. Lav mindre specifikke BDD'er.
+		\item Afsnit BDD for IPS divergerer i opsætning.
+		\item Power in mangler på Fig. 4.6, udspecificering af blokken ":Motor System".
+	\end{itemize}
+	SD
+	\begin{itemize}
+		\item 6.7 6.11 divergerer på alt boksene.
+	\end{itemize}
+	DM
+	\begin{itemize}
+		\item User som tændstikmand
+	\end{itemize}
+\end{itemize}
